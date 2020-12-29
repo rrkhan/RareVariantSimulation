@@ -58,7 +58,7 @@ for index in range(0, len(penetrance)):
     output_dat[range(first, last), 3] = car_controls + noncar_controls
     output_dat[range(first, last), 4] = car_cases + noncar_cases
 df = pd.DataFrame(output_dat)
-df.to_csv('scenario_' + str(curr_scen + 1) + '.csv', columns = ['Penetrance', 'CaseCars', 'ControlCars', 'TotControls', 'TotCases'])
+df.to_csv('scenario_1.csv', columns = ['Penetrance', 'CaseCars', 'ControlCars', 'TotControls', 'TotCases'])
 
 
 
